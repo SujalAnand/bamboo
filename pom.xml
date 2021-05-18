@@ -40,6 +40,19 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					<cloudHubDeployment>
+								<username>${anypoint.username}</username>
+								<password>${anypoint.password}</password>
+								<!--<applicationName>${project.artifactId}-${maven.build.timestamp}</applicationName> -->
+								<muleVersion>4.3.0</muleVersion>
+								<applicationName>${cloudhub.env}-${project.artifactId}</applicationName>
+								<environment>${cloudhub.env}</environment>
+								<region>us-east-1</region>
+								<uri>https://anypoint.mulesoft.com</uri>
+								<workerType>MICRO</workerType>
+								<workers>1</workers>
+								<objectStoreV2>true</objectStoreV2>
+							</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
