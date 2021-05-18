@@ -17,7 +17,7 @@
 		<app.runtime>4.3.0-20210304</app.runtime>
 		<mule.maven.plugin.version>3.4.2</mule.maven.plugin.version>
 	</properties>
-<distributionManagement>
+	<distributionManagement>
 		<snapshotRepository>
 			<id>Snapshot</id>
 			<url>https://saasdadsad.jfrog.io/artifactory/Snapshot/</url>
